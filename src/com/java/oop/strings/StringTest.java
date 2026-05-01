@@ -71,8 +71,8 @@ public class StringTest {
         System.out.println(password1.length());
         //chained method invocation
         System.out.println(password1.trim().length());
-        int phoneno = 324234;
-        System.out.println( String.valueOf(phoneno));
+        int phoneNo = 324234;
+        System.out.println( String.valueOf(phoneNo));
     }
 
 }
