@@ -1,15 +1,21 @@
 package com.java.oop.collections;
 
+import com.java.oop.util.CustomerIdComparatorAsc;
+import com.java.oop.util.CustomerIdComparatorDesc;
+import com.java.oop.util.CustomerNameComparatorDesc;
+
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
 
 public class SetTest {
     public static void main(String[] args) {
-        HashSet<String> hs = new HashSet<>();
-        hs.add("customer1");
+        TreeSet<String> hs = new TreeSet<>();
+        hs.add("customer4");
         hs.add("customer2");
         hs.add("customer3");
-        hs.add("customer4");
+        hs.add("customer1");
         hs.add("customer1");
         System.out.println(hs.size());
         System.out.println(hs.remove("customer2"));
@@ -23,7 +29,7 @@ public class SetTest {
         }
 
         /*  Customer Set */
-        HashSet<Customer> customerSet = new HashSet<>();
+        TreeSet<Customer> customerSet = new TreeSet<>(new CustomerNameComparatorDesc());
         customerSet.add(new Customer(111,"customer1","customer1@gmail.com"));
         customerSet.add(new Customer(222,"customer2","customer2@gmail.com"));
         customerSet.add(new Customer(555,"customer5","customer5@gmail.com"));
