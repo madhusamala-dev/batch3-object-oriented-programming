@@ -1,6 +1,5 @@
 package com.java.oop.collections.assignment;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ProductService {
