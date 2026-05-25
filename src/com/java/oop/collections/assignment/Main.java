@@ -21,7 +21,8 @@ public class Main {
         productService.addProduct(product);
         //System.out.println(productService.getAllProducts());
         productService.addProduct(product);
-        System.out.println(productService.getAllProducts());
+        //System.out.println(productService.getAllProducts());
+        productService.displayProducts(productService.getAllProducts());
 
     }
 }
